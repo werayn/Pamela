@@ -2,11 +2,10 @@
 
 ## Description
 
-Welcome !
-Pamela is pluggable authentication modules(PAM) project for unix user session.
-To make your workspace safe.  
-Of course it's a homemade project to learn more about this kind of security.
-Keep your default PAM is perfect :)
+Welcome !  
+Pamela is pluggable authentication modules(PAM) project for unix user session.  
+Of course it's a homemade project to learn more about this kind of security.  
+Keep your default PAM is perfect :)  
 
 ## Getting started
 
