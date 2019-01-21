@@ -1,0 +1,13 @@
+#!/bin/bash
+if ! grep -q "session required pamela.so" "/etc/pam.d/common-session";
+then
+  if [ ! -d "/lib/security" ];
+  then
+    sudo mkdir "/lib/security";
+  fi
+  (sudo cp pam_ela.so /lib/security/pam_ela.so &&
+  sudo sed -i '1isession required pamela.so' "/etc/pam.d/common-session" &&
+  echo "Install success !") || echo "Install failure !"
+else
+  echo "Already installed !"
+fi

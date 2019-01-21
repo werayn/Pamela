@@ -1,0 +1,7 @@
+#!/bin/bash
+if grep -q "session required pamela.so" "/etc/pam.d/common-session";
+then
+    echo "Installed !";
+else
+    echo "Not installed !";
+fi

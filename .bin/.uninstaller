@@ -1,0 +1,9 @@
+#!/bin/bash
+if grep -q "session required pamela.so" "/etc/pam.d/common-session";
+then
+  (sudo sed -i 1d "/etc/pam.d/common-session" &&
+  sudo rm -f "/lib/security/pamela.so" &&
+  echo "Uninstall success !") || echo "Uninstall failure !"
+else
+  echo "Not installed !"
+fi
